@@ -1,0 +1,17 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.pageNotFound{
+    font-size: 60px;
+    padding: 30px;
+}
+
+.pageNotFoundMessage{
+    font-size: 18px;
+    padding: 12px;
+}

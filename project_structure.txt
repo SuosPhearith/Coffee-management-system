@@ -1,0 +1,46 @@
+-- User Table (for both admin and employee)
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(50),
+    Username VARCHAR(50),
+    Password VARCHAR(50),
+    Role ENUM('admin', 'employee')
+);
+
+-- Product Table
+CREATE TABLE Products (
+    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(100),
+    Description VARCHAR(255),
+    Price DECIMAL(10, 2),
+    StockLevel INT
+);
+
+-- Order Table
+CREATE TABLE Orders (
+    OrderID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT,
+    OrderDate DATETIME,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+-- Order Items Table
+CREATE TABLE OrderItems (
+    OrderItemID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    Quantity INT,
+    TotalPrice DECIMAL(10, 2),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE SET NULL,
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+-- Payment Table
+CREATE TABLE Payments (
+    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID INT,
+    PaymentAmount DECIMAL(10, 2),
+    PaymentMethod VARCHAR(50),
+    TransactionDetails VARCHAR(255),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID) ON DELETE SET NULL
+);

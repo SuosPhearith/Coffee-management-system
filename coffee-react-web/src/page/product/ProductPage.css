@@ -1,0 +1,30 @@
+
+
+.wrapper {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px
+}
+
+.search{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-item{
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+}
+.modal-item2{
+  margin-top: 20px;
+  height: 70px;
+}
+.modal-item3{
+  margin-top: 20px;
+  width: 100%;
+}

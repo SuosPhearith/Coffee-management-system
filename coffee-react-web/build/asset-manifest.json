@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/coffee-management-system/static/css/main.40a7d30f.css",
+    "main.js": "/coffee-management-system/static/js/main.ae291e1c.js",
+    "static/media/shop2.jpg": "/coffee-management-system/static/media/shop2.96b73bd10497583d9478.jpg",
+    "static/media/third.png": "/coffee-management-system/static/media/third.781c749af10c4905b5b4.png",
+    "index.html": "/coffee-management-system/index.html",
+    "main.40a7d30f.css.map": "/coffee-management-system/static/css/main.40a7d30f.css.map",
+    "main.ae291e1c.js.map": "/coffee-management-system/static/js/main.ae291e1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40a7d30f.css",
+    "static/js/main.ae291e1c.js"
+  ]
+}
